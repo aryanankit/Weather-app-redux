@@ -1,7 +1,8 @@
 import React, { Dispatch, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchWeather } from "./weatherSlice";
-import { AppDispatch } from "./store"; // Import the correct type for dispatch
+import { fetchWeather } from "../redux/weatherSlice";
+import { AppDispatch } from "../redux/store"; // Import the correct type for dispatch
+import "./WeatherComponent.css";
 
 function WeatherComponent() {
   const [city, setCity] = useState("");
@@ -22,7 +23,7 @@ function WeatherComponent() {
   };
 
   return (
-    <div>
+    <div style={{marginLeft: '30px'}}>
       <h2>Weather App</h2>
       <input
         type="text"
