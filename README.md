@@ -1,4 +1,5 @@
 This project is weather displaying application.
+Real-time Updates: Users expect accurate and up-to-the-minute information about the current weather conditions in their location. A reliable weather app constantly fetches data from meteorological sources to ensure that users receive the most recent and relevant updates.
 
 # Getting Started with Create React App
 
