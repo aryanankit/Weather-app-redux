@@ -23,7 +23,7 @@ function WeatherComponent() {
   };
 
   return (
-    <div style={{marginLeft: '30px'}}>
+    <div style={{marginLeft: '40px'}}>
       <h2>Weather App</h2>
       <input
         type="text"
