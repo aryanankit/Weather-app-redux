@@ -36,7 +36,7 @@ const weatherSlice = createSlice({
       })
       .addCase(fetchWeather.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'An error occurred with request';
+        state.error = action.error.message || 'An error occurred with your request';
       });
   },
 });
