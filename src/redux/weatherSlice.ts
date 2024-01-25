@@ -15,8 +15,7 @@ const initialState: WeatherState = {
 
 export const fetchWeather = createAsyncThunk(
   'weather/fetchWeather', async (city: string) => {
-  const response = await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city&lat=&long=}&appid=${process.env.REACT_APP_KEY}/`);
+  const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?&appid=${process.env.REACT_APP_KEY}/`);
   return response.data;
 });
 
