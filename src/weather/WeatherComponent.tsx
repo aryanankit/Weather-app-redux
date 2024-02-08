@@ -11,7 +11,6 @@ function WeatherComponent() {
   const loading = useSelector((state: any) => state.weather.loading);
   const error = useSelector((state: any) => state.weather.error);
 
-  // need to convert kelvin to fahrenheit from openweather api
   const convertKelvinToFahrenheit = (kelvin: number): number => {
     return Math.round((kelvin - 273.15) * (9 / 5) + 32);
   };
